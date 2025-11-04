@@ -1,5 +1,14 @@
 # Mrpropacks Digital Flagship Blueprint
 
+## Quick Orientation: Start Here If You're Confused
+
+1. **Need momentum today?** Jump to [Section X](#x-immediate-next-10-days-playbook) for the 10-day sprint that translates the blueprint into daily actions with owners.
+2. **Want to see the experience visually?** Follow the five-step mock workflow in [Section XI](#xi-visualizing-the-experience-how-to-see-a-mock-version) and ship the one-day prototype package outlined in [Section XII](#xii-mock-deliverable-checklist--timeline).
+3. **Clarifying responsibilities?** Review [Section IX](#ix-recommended-next-actions) to understand which teams own palette alignment, asset production, platform setup, measurement, and affiliate rollout.
+4. **Looking for the strategic rationale?** Sections I–VIII unpack the brand, UX, content, commerce, SEO, and competitive logic that inform every downstream deliverable.
+
+> **Shortcut:** If you only have an hour, scan Sections IX–XII first to know exactly what to do next, then circle back to the earlier strategy chapters for deeper context.
+
 ## I. The Digital Manifestation of the Mrpropacks Brand Identity
 
 ### 1.1 Defining the "Functional Minimalism" Aesthetic
