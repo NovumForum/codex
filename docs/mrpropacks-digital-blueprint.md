@@ -244,3 +244,15 @@
 
 > **Review Ready Signal**: When the prototype link, asset exports, style tokens, and decision log are all posted in the shared workspace, declare "Mock v1 ready" in the team channel so reviewers know the package is complete—no need to chase missing context.
 
+## XIII. Technical Validation Snapshot
+
+Even though the blueprint is strategy-first, we are keeping a tight loop with the supporting tooling so engineers can jump straight from planning to verified execution environments.
+
+- **Latest Validation Pass**: `cargo test -p codex-cli`
+  - Confirms the CLI utilities that power content workflows, sandbox automation, and forthcoming affiliate import scripts execute cleanly in the current branch.
+  - Run time: ~11 minutes on the sandbox baseline; expect faster iterations locally once dependencies are cached.
+- **When to Re-run**: Anytime the execution plan introduces new automation (e.g., Journal ingestion scripts or affiliate feed processors) or after updating the mock workflow hand-off tooling.
+- **Where to Log Results**: Capture the command output in the project hub’s “Engineering Readiness” page so design, content, and ops teammates can see that the foundation remains stable before layering on new modules.
+
+> **Why it Matters**: Maintaining a documented heartbeat of passing tests reassures stakeholders who asked for “proof everything still runs” during the blueprint phase and keeps the Lego-inspired launch on schedule.
+
