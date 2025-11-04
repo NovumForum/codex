@@ -215,3 +215,23 @@
 
 > **Result**: Within a single day, stakeholders can click through a living prototype that expresses the Lego-inspired aesthetic, validates information architecture, and showcases motion/interaction cues—effectively delivering the “mock version” of the entire blueprint.
 
+## XII. Mock Deliverable Checklist & Timeline
+
+### 12.1 One-Day Sprint Plan
+| Block | Timebox | Owner | Output |
+| --- | --- | --- | --- |
+| Kickoff sync | 15 min | PM + design lead | Confirm key pages (homepage, PDP, Technology hub) and success criteria from Sections I–IX. |
+| Wireframe pass | 90 min | Product designer | Low-fidelity flows using grayscale Lego-style blocks; annotate each frame with the matching blueprint section for context. |
+| High-fidelity uplift | 120 min | Visual/UI designer | Apply Lego palette styles (`Yellow #FFD400`, `Blue #0065FF`, `Red #FF2D2D`, `Charcoal #1C1C1C`, `White #FFFFFF`), typography tokens, and product imagery. |
+| Prototype linking | 45 min | Product designer | Connect interactions (nav hover, cart drawer, PDP feature hotspots) and set device presets for desktop and mobile. |
+| QA & share-out | 30 min | Designer + PM | Run through the clickable prototype, export PNG boards, generate spec via Figma Inspect, and drop links/files in the project hub. |
+
+### 12.2 Deliverables Before Review
+- **Prototype URL**: Read-only Figma link with interactions labeled (use `?node-id=` bookmarks for critical screens).
+- **Snapshot Pack**: Zipped PNG/WebP exports of the homepage hero, PDP feature module, Technology hub header, and Journal article hero for stakeholders who prefer static previews.
+- **Style Tokens**: Shared Figma library (or exported `.fig` snippet) containing Lego palette swatches, text styles, and reusable CTAs so engineering can mirror the system in code.
+- **Comment Log**: Centralized list (Notion, FigJam, or Confluence) mapping feedback back to frame IDs and blueprint sections to keep decisions auditable.
+- **Hand-off Notes**: Short Loom (≤5 minutes) or written summary outlining interaction nuances (drawer timing, hover delays, motion easing) and linking to relevant blueprint guidance.
+
+> **Review Ready Signal**: When the prototype link, asset exports, style tokens, and decision log are all posted in the shared workspace, declare "Mock v1 ready" in the team channel so reviewers know the package is complete—no need to chase missing context.
+
