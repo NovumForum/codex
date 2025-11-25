@@ -255,11 +255,11 @@
 
 ## XIII. Technical Validation Snapshot
 
-- **Latest Pass** — `cargo test -p codex-cli`
+- **Latest Run — 14 Nov 2025 (Sandbox)**: `cargo test -p codex-cli`
   - Validates the CLI utilities that support content workflows, sandbox automation, and upcoming affiliate imports.
-  - Baseline runtime: ~11 minutes in the sandbox; expect quicker cycles locally once dependencies warm up.
+  - Runtime: 7m 38s with a warm dependency cache; expect faster local cycles once toolchains settle.
 - **Re-run Triggers** — Introduce automation (Journal ingestion, affiliate processors), adjust the mock hand-off toolchain, or update dependencies touching the CLI.
-- **Documentation** — Post each run’s output to the project hub’s “Engineering Readiness” log so every team sees the technical baseline before shipping new modules.
+- **Documentation** — Post each run’s output (including duration and command hash) to the project hub’s “Engineering Readiness” log so every team sees the technical baseline before shipping new modules.
 
 > **Why it Matters**: A visible cadence of passing tests keeps stakeholders confident that the Lego-inspired rollout rests on a healthy engineering foundation.
 
