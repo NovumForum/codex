@@ -268,6 +268,7 @@
 
 ## XIV. Visual Prototype Pack
 
+- **Prototype hub**: Open `docs/mrpropacks-visual-prototypes/index.html` for quick links, palette swatches, and browser-ready launches of each mock.
 - **Where to open**: Launch the HTML mocks in `docs/mrpropacks-visual-prototypes/` directly in your browser—no local build, Node install, or design software required.
 - **Included mocks**:
   - `lego-homepage-mock.html` — Homepage concept with Lego-gradient hero, persona runway, feature grid, and testimonial stack mirroring Sections I–III.

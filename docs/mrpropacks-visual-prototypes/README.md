@@ -4,10 +4,11 @@ Preview the bright, primary-colour experience outlined in the blueprint without 
 
 ## Files
 
+- `index.html` – Hub to open the mocks instantly and see the palette at a glance.
 - `lego-homepage-mock.html` – High-level homepage concept with Lego-block hero, persona runway, and feature grid.
 - `lego-product-mock.html` – Product detail mock highlighting hero carousel, feature callouts, and trust modules.
 
-Open either file directly in a browser (double-click in Finder/Explorer or run `open docs/mrpropacks-visual-prototypes/lego-homepage-mock.html`).
+Open any file directly in a browser (double-click in Finder/Explorer or run `open docs/mrpropacks-visual-prototypes/index.html`).
 
 ## How to Use
 
