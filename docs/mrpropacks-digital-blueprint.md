@@ -3,7 +3,7 @@
 ## Quick Orientation: Start Here If You're Confused
 
 1. **Need momentum today?** Jump to [Section X](#x-immediate-next-10-days-playbook) for the 10-day sprint that translates the blueprint into daily actions with owners.
-2. **Want to see the experience visually?** Follow the five-step mock workflow in [Section XI](#xi-visualizing-the-experience-how-to-see-a-mock-version) and ship the one-day prototype package outlined in [Section XII](#xii-mock-deliverable-checklist--timeline).
+2. **Want to see the experience visually?** Jump to [Section XIV](#xiv-visual-prototype-pack) for ready-to-open HTML mockups, then follow the five-step workflow in [Section XI](#xi-visualizing-the-experience-how-to-see-a-mock-version) to adapt them inside Figma.
 3. **Clarifying responsibilities?** Review [Section IX](#ix-recommended-next-actions) to understand which teams own palette alignment, asset production, platform setup, measurement, and affiliate rollout.
 4. **Looking for the strategic rationale?** Sections I–VIII unpack the brand, UX, content, commerce, SEO, and competitive logic that inform every downstream deliverable.
 
@@ -265,4 +265,16 @@
 - **Documentation** — Post each run’s output (including duration and command hash) to the project hub’s “Engineering Readiness” log so every team sees the technical baseline before shipping new modules.
 
 > **Why it Matters**: A visible cadence of passing tests keeps stakeholders confident that the Lego-inspired rollout rests on a healthy engineering foundation.
+
+## XIV. Visual Prototype Pack
+
+- **Where to open**: Launch the HTML mocks in `docs/mrpropacks-visual-prototypes/` directly in your browser—no local build, Node install, or design software required.
+- **Included mocks**:
+  - `lego-homepage-mock.html` — Homepage concept with Lego-gradient hero, persona runway, feature grid, and testimonial stack mirroring Sections I–III.
+  - `lego-product-mock.html` — PDP concept featuring the narrative structure from Section III, modular module strip, and trust band defined in Section IV.
+- **Workflow alignment**:
+  1. **Immediate visibility**: Grab screenshots or Loom walk-throughs straight from the HTML to answer “Can I see the design?” in minutes.
+  2. **Design tool uplift**: Import spacing, typography, and colour tokens (CSS variables) when rebuilding components in Figma or Framer per Sections XI–XII.
+  3. **Engineering translation**: Treat the markup as reference when implementing in Next.js/Tailwind—utility classes can map directly to the provided values.
+  4. **Iterate & sync**: Document feedback within the HTML comments or design tool and update this pack alongside blueprint revisions so strategy and visuals stay coupled.
 

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mrpropacks Homepage – Lego Visual Mock</title>
+  <style>
+    :root {
+      --yellow: #ffd400;
+      --blue: #0057ff;
+      --red: #ff2d55;
+      --charcoal: #111827;
+      --charcoal-light: #1f2937;
+      --white: #ffffff;
+      --sand: #f5f5f7;
+      --font-sans: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--sand);
+      color: var(--charcoal);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--yellow) 0%, var(--white) 45%, var(--blue) 100%);
+      color: var(--charcoal);
+      padding: 96px clamp(24px, 8vw, 96px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 18% -15% -35% 55%;
+      background: var(--red);
+      border-radius: 48px;
+      transform: rotate(-8deg);
+      opacity: 0.18;
+    }
+
+    .hero {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      gap: clamp(24px, 5vw, 48px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      background: var(--white);
+      color: var(--charcoal);
+      padding: 8px 16px;
+      border-radius: 999px;
+      width: fit-content;
+      box-shadow: 0 14px 35px rgba(17, 24, 39, 0.16);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 4vw, 4.2rem);
+      letter-spacing: -0.01em;
+      margin: 0;
+      max-width: 14ch;
+    }
+
+    .hero p {
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      max-width: 52ch;
+      margin: 0;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background: var(--charcoal);
+      color: var(--yellow);
+      padding: 16px 28px;
+      border-radius: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 16px 32px rgba(17, 24, 39, 0.25);
+    }
+
+    .btn-primary:focus-visible {
+      outline: 3px solid var(--red);
+      outline-offset: 4px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 24px 42px rgba(17, 24, 39, 0.32);
+    }
+
+    .btn-secondary {
+      color: var(--charcoal);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
+    }
+
+    .lego-stack {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 32px;
+    }
+
+    .lego-card {
+      padding: 24px;
+      border-radius: 24px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      min-height: 180px;
+    }
+
+    .lego-card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+    }
+
+    .lego-card:nth-child(1) { background: var(--blue); }
+    .lego-card:nth-child(2) { background: var(--charcoal); }
+    .lego-card:nth-child(3) { background: var(--red); }
+
+    .lego-card p {
+      margin: 0;
+      opacity: 0.88;
+      font-size: 1rem;
+    }
+
+    .section {
+      padding: clamp(64px, 8vw, 108px) clamp(24px, 6vw, 96px);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3vw, 3rem);
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+    }
+
+    .persona-runway {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .persona-card {
+      background: var(--white);
+      border-radius: 28px;
+      padding: 32px;
+      display: grid;
+      gap: 16px;
+      box-shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+    }
+
+    .persona-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .persona-card ul {
+      margin: 0;
+      padding-left: 20px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .feature-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .feature-tile {
+      border-radius: 24px;
+      padding: 28px;
+      background: var(--charcoal-light);
+      color: var(--white);
+      display: grid;
+      gap: 12px;
+    }
+
+    .feature-tile strong {
+      font-size: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    .tech-section {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .tech-section p {
+      max-width: 64ch;
+      margin-bottom: 32px;
+    }
+
+    .tech-section a {
+      color: var(--yellow);
+      font-weight: 600;
+    }
+
+    .testimonials {
+      background: var(--white);
+      border-radius: 28px;
+      padding: clamp(32px, 5vw, 56px);
+      box-shadow: 0 24px 60px rgba(17, 24, 39, 0.12);
+      display: grid;
+      gap: 24px;
+    }
+
+    blockquote {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    cite {
+      font-style: normal;
+      opacity: 0.75;
+    }
+
+    footer {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 64px clamp(24px, 6vw, 96px);
+    }
+
+    footer .cta-stack {
+      display: grid;
+      gap: 24px;
+      max-width: 680px;
+    }
+
+    footer .cta-stack h2 {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      margin: 0;
+    }
+
+    footer .cta-stack p {
+      margin: 0;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding-top: 72px;
+        padding-bottom: 72px;
+      }
+
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header aria-labelledby="hero-title">
+    <div class="hero">
+      <span class="badge">Intelligent carry, playfully precise</span>
+      <h1 id="hero-title">Engineered Lego energy for life on the move.</h1>
+      <p>Meet the flagship carry system that fuses anti-theft intelligence, modular tech integration, and joyful colour blocking. Built for students, pros, and nomads who want performance with personality.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#shop">Shop the collection</a>
+        <a class="btn-secondary" href="#tech">Explore the technology →</a>
+      </div>
+      <div class="lego-stack" role="presentation">
+        <div class="lego-card">
+          <h3>Campus to co-working</h3>
+          <p>Magnetic laptop vault and day-to-night modules snap into place without visual clutter.</p>
+        </div>
+        <div class="lego-card">
+          <h3>Security that flexes</h3>
+          <p>Slash-proof Cordura, lockable tracks, and hidden pockets keep gear protected worldwide.</p>
+        </div>
+        <div class="lego-card">
+          <h3>Power on demand</h3>
+          <p>USB-C pass-through with water-sealed channels keeps devices charged on every leg.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="shop" aria-labelledby="persona-title">
+    <h2 class="section-title" id="persona-title">See yourself inside the system</h2>
+    <div class="persona-runway">
+      <article class="persona-card">
+        <span class="persona-tag" style="color: var(--blue);">Student</span>
+        <h3>Load out your campus routine</h3>
+        <ul>
+          <li>Structured spine panel keeps 15" laptops protected.</li>
+          <li>Colour-coded inserts make morning packing effortless.</li>
+          <li>Water-slick base shrugs off rainy lectures.</li>
+        </ul>
+      </article>
+      <article class="persona-card">
+        <span class="persona-tag" style="color: var(--yellow);">Young professional</span>
+        <h3>Command your hybrid workweek</h3>
+        <ul>
+          <li>Magnetic folio docks to hold decks, tablets, and pens.</li>
+          <li>Gym-ready airflow channel keeps kit fresh after-hours.</li>
+          <li>Polished charcoal shell slides into any boardroom.</li>
+        </ul>
+      </article>
+      <article class="persona-card">
+        <span class="persona-tag" style="color: var(--red);">Digital nomad</span>
+        <h3>Security that travels light</h3>
+        <ul>
+          <li>TSA-ready butterfly opening speeds checkpoints.</li>
+          <li>Hidden passport sleeve and AirTag nest.</li>
+          <li>External battery garage with heat-diffusing vents.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="feature-title">
+    <h2 class="section-title" id="feature-title">Lego logic for modular performance</h2>
+    <div class="feature-grid">
+      <div class="feature-tile">
+        <strong>Magnetic brick docks</strong>
+        <p>Snap accessories into coloured anchor points to remix storage without losing the clean silhouette.</p>
+      </div>
+      <div class="feature-tile">
+        <strong>Signal-safe pockets</strong>
+        <p>RFID-shielded compartments glow yellow inside so essentials stand out even in low light.</p>
+      </div>
+      <div class="feature-tile">
+        <strong>Weather fortress</strong>
+        <p>Triple-layer Cordura shell in charcoal + seam-sealed zippers tested for 45 minutes of heavy rain.</p>
+      </div>
+      <div class="feature-tile">
+        <strong>Adaptive volume</strong>
+        <p>Accordion gussets expand to 28L; red pull tabs snap everything back to a sleek commute profile.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tech-section" id="tech" aria-labelledby="tech-title">
+    <h2 class="section-title" id="tech-title">Technology that earns the premium</h2>
+    <p>Every hidden seam, zipper track, and charging rail is documented for transparency. Deep-dive into the Cordura weave, power-routing diagrams, and security certifications in the Technology hub.</p>
+    <a href="#">Open the Technology hub →</a>
+  </section>
+
+  <section class="section" aria-labelledby="social-proof-title">
+    <h2 class="section-title" id="social-proof-title">Loved by the Mrpropacks collective</h2>
+    <div class="testimonials" role="list">
+      <article role="listitem">
+        <blockquote>“Feels like someone turned my favourite Lego set into the most capable backpack I've ever owned.”</blockquote>
+        <cite>— Avery, Product Designer & Remote Nomad</cite>
+      </article>
+      <article role="listitem">
+        <blockquote>“The bright inserts guide my workflow, while the outer shell stays executive-ready. Unreal balance.”</blockquote>
+        <cite>— Jordan, Strategy Consultant</cite>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="cta-stack">
+      <h2>Ready to build your carry ecosystem?</h2>
+      <p>Select your core pack, snap on your modules, and activate the Mrpropacks warranty for life.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#">Start with the Urban Command Pack</a>
+        <a class="btn-secondary" href="#">Compare all packs →</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
