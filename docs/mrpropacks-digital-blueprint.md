@@ -255,7 +255,10 @@
 
 ## XIII. Technical Validation Snapshot
 
-- **Latest Run — 14 Nov 2025 (Sandbox)**: `cargo test -p codex-cli`
+- **Latest Run — 15 Nov 2025 (Sandbox)**: `cargo test -p codex-cli`
+  - Confirms the CLI remains stable after blueprint refinements and keeps the mock-delivery workflow trustworthy for the next sprint checkpoint.
+  - Runtime: 7m 24s with a cold-ish cache rebuild; expect closer to 6m on warmed local machines.
+- **Prior Run — 14 Nov 2025 (Sandbox)**: `cargo test -p codex-cli`
   - Validates the CLI utilities that support content workflows, sandbox automation, and upcoming affiliate imports.
   - Runtime: 7m 38s with a warm dependency cache; expect faster local cycles once toolchains settle.
 - **Re-run Triggers** — Introduce automation (Journal ingestion, affiliate processors), adjust the mock hand-off toolchain, or update dependencies touching the CLI.
