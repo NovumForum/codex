@@ -45,7 +45,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const headerSecret = req.headers['x-webhook-secret'];
   const requestSecret = Array.isArray(headerSecret) ? headerSecret[0] : headerSecret;
 
-  if (configuredSecret && configuredSecret !== requestSecret) {
+  if (!configuredSecret) {
+    return res.status(503).json({ ok: false, error: 'Missing configuration: WEBHOOK_SECRET' });
+  }
+
+  if (configuredSecret !== requestSecret) {
     return res.status(401).json({ ok: false, error: 'Invalid webhook secret' });
   }
 
