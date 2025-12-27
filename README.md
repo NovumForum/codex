@@ -95,6 +95,7 @@ Codex CLI supports a rich set of configuration options, with preferences stored 
   - [Build from source](./docs/install.md#build-from-source)
 - [**FAQ**](./docs/faq.md)
 - [**Open source fund**](./docs/open-source-fund.md)
+- [**Website deployment**](./docs/deployment.md) - Deploy documentation to Netlify, Vercel, or GitHub Pages
 
 ---
 
