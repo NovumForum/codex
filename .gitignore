@@ -57,6 +57,9 @@ yarn-error.log*
 .vercel/
 .netlify/
 
+# Generated documentation website
+website/docs/
+
 # patches
 apply_patch/
 

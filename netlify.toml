@@ -1,0 +1,30 @@
+[build]
+  # Build command - runs the build script
+  command = "bash scripts/build-website.sh"
+  
+  # Directory to publish
+  publish = "website"
+
+[build.environment]
+  # Node version for build
+  NODE_VERSION = "22"
+
+# Redirect rules
+[[redirects]]
+  from = "/docs"
+  to = "/index.html#docs"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+# Headers for security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
